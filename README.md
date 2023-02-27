@@ -25,3 +25,6 @@
 + 11장. TestNG로 수행하는 데이터 주도 테스트
 #### 12주차	
 + 11장. TestNG로 수행하는 데이터 주도 테스트
+```
+예제 코드 : https://github.com/PacktPublishing/Selenium-WebDriver-3-Practical-Guide-Second-Edition
+```  
