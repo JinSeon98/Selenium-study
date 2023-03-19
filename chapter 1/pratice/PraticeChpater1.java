@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -42,9 +43,11 @@ public class PraticeChpater1 {
 	//by.tagName()을 이용하여 웹툰 포스터 크기 출력
 	@Test
 	public void getWebtoonInfo() {
-		WebElement poster = driver.findElement(By.tagName("img"));
+		WebElement poster = driver.findElement(By.className("Poster__image--d9XTI"));
+		WebElement title = driver.findElement(By.className("ContentTitle__search_title--nndrf"));
 		
-		System.out.println("Found Webtoons: "+poster.getSize());
+		System.out.println("Webtoons: "+poster.getSize());
+		System.out.println("Title: "+title.getText());
 	}
 	
 	//By.xpath()를 이용하여 웹툰 메인페이지로 이동
@@ -57,11 +60,12 @@ public class PraticeChpater1 {
 	@BeforeMethod
 	public void beforeMethod() {
 		// chromedriver 경로 설정
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C://Users/USER/eclipse-workspace/chromedriver.exe");
 
 		// 웹드라이버 세션 초기화
 		driver = new ChromeDriver();
 		driver.get("https://comic.naver.com/search?keyword=%EA%B0%95%EC%95%84%EC%A7%80"); //네이버 웹툰 url
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	@AfterMethod
