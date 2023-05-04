@@ -26,9 +26,7 @@ public class IAmTheDriver {
 			eventFiringDriver.register(eventListener);
 			eventFiringDriver.get("https://comic.naver.com/index");
 			eventFiringDriver.get("https://comic.naver.com/webtoon/detail?titleId=700139&no=1");
-			
-			//eventFiringDriver.navigate().forward();
-			
+						
 			eventFiringDriver.navigate().refresh();
 			
 			driver.findElement(By.className("u_cbox_write_wrap")).click();
