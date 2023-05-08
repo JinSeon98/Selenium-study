@@ -23,6 +23,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 
+/* 
+ * Chapter 4-2 실습
+ * 
+ * facebook 로그인 페이지에서 chapter 4-2 내용을 바탕으로
+ * 쿠키 핸들링을 통해 로그인 과정을 생략해보자
+ */
+
 public class PracticeChapter4_2 {
 	
 	WebDriver driver;
