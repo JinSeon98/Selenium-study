@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51410" started-at="2023-05-11T09:20:22Z" finished-at="2023-05-11T09:21:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="51410" started-at="2023-05-11T09:20:22Z" finished-at="2023-05-11T09:21:13Z">
+      <class name="com.example.PraticeChapter1">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.example.PraticeChapter1@1e802ef9]" name="beforeMethod" is-config="true" duration-ms="6290" started-at="2023-05-11T18:20:22Z" finished-at="2023-05-11T18:20:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="clickLogo()[pri:0, instance:com.example.PraticeChapter1@1e802ef9]" name="clickLogo" duration-ms="15978" started-at="2023-05-11T18:20:28Z" finished-at="2023-05-11T18:20:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLogo -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.example.PraticeChapter1@1e802ef9]" name="afterMethod" is-config="true" duration-ms="1" started-at="2023-05-11T18:20:44Z" finished-at="2023-05-11T18:20:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.example.PraticeChapter1@1e802ef9]" name="beforeMethod" is-config="true" duration-ms="6592" started-at="2023-05-11T18:20:44Z" finished-at="2023-05-11T18:20:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="searchWebtoon()[pri:0, instance:com.example.PraticeChapter1@1e802ef9]" name="searchWebtoon" duration-ms="22524" started-at="2023-05-11T18:20:51Z" finished-at="2023-05-11T18:21:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWebtoon -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.example.PraticeChapter1@1e802ef9]" name="afterMethod" is-config="true" duration-ms="0" started-at="2023-05-11T18:21:13Z" finished-at="2023-05-11T18:21:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.example.PraticeChapter1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
