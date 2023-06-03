@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54209" started-at="2023-06-03T11:00:37Z" finished-at="2023-06-03T11:01:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54209" started-at="2023-06-03T11:00:37Z" finished-at="2023-06-03T11:01:31Z">
+      <class name="com.example.TC_NTV_VodComment">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.example.TC_NTV_VodComment@56528192]" name="setup" is-config="true" duration-ms="5380" started-at="2023-06-03T20:00:37Z" finished-at="2023-06-03T20:00:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_01_04_정렬()[pri:0, instance:com.example.TC_NTV_VodComment@56528192]" name="TC_01_04_정렬" duration-ms="48796" started-at="2023-06-03T20:00:42Z" description="[BEST댓글] | V 전체댓글 | 도움말" finished-at="2023-06-03T20:01:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_04_정렬 -->
+      </class> <!-- com.example.TC_NTV_VodComment -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
