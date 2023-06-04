@@ -58,6 +58,12 @@ public class TC_NTV_VodComment {
 	 vod.Sort_option();
   }
   
+  @Test (description = "닉네임 | (BEST) 댓글내용 | 등록시간 | [신고] | [답글 n] | [공감] | [비공감] ")
+  public void TC_01_05_댓글내용() {
+	  VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	  vod.commentBox();
+  }
+  
   @Test (description = "[확인]선택 > 로그인페이지 노출")
   public void TC_08_01_비로그인_댓글() {
 	 VodEnd vod = PageFactory.initElements(driver, VodEnd.class);

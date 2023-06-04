@@ -106,7 +106,26 @@ public class VodEnd {
 				System.out.print(option.getText() + " ");
 			}
 		}
-		// 도움말 구현 
+		
+		WebElement help_icon = driver.findElement(By.className("u_cbox_btn_help"));
+		assertThat(help_icon.isDisplayed()).isEqualTo(true);
+	}
+	// 댓글 출력 
+	public void commentBox() {
+		CommentBtn();
+		
+		WebElement nick = driver.findElement(By.className("u_cbox_nick"));
+		WebElement text = driver.findElement(By.className("u_cbox_contents"));
+		WebElement date = driver.findElement(By.className("u_cbox_date"));
+		WebElement report = driver.findElement(By.className("u_cbox_in_report"));
+		WebElement reply = driver.findElement(By.className("u_cbox_reply_txt"));
+		WebElement recomm = driver.findElement(By.className("u_cbox_ico_recomm"));
+		WebElement recommCnt = driver.findElement(By.className("u_cbox_cnt_recomm"));
+		WebElement unrecomm = driver.findElement(By.className("u_cbox_ico_unrecomm"));
+		WebElement unrecommCnt = driver.findElement(By.className("u_cbox_cnt_unrecomm"));
+		
+		System.out.print(nick.getText() + "\n" + text.getText() + "\n" + date.getText() + "\t" + report.getText() + "\n");
+		System.out.println(reply.getText() + "\t\t\t [" + recomm.getText() + recommCnt.getText() + "] [" + unrecomm.getText() + unrecommCnt.getText() + "]");
 		
 	}
 	// 비로그인 > 댓글
