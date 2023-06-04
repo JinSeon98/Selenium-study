@@ -58,7 +58,7 @@ public class TC_NTV_VodComment {
 	 vod.Sort_option();
   }
   
-  @Test (description = "닉네임 | (BEST) 댓글내용 | 등록시간 | [신고] | [답글 n] | [공감] | [비공감] ")
+  @Test (description = "닉네임 | (BEST) 댓글내용 | 등록시간 | [신고] | [답글 n] | [공감 n] | [비공감 n] ")
   public void TC_01_05_댓글내용() {
 	  VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
 	  vod.commentBox();

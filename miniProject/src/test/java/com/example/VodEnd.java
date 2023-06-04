@@ -39,10 +39,6 @@ public class VodEnd {
 		assertThat(commentCount.isDisplayed()).isEqualTo(true);
 		assertThat(refreshBtn.isDisplayed()).isEqualTo(true);
 		
-		/*
-		 *
-		 * 댓글 입력창 ('주제와 무관한 댓글, 악플은 삭제될 수 있습니다.')
-		*/
 	}
 	
 	//댓글 차트 영역
@@ -62,6 +58,7 @@ public class VodEnd {
 		assertThat(foldIcon.isDisplayed()).isEqualTo(true);
 		
 	}
+	
 	public void Login() {
 		WebElement loginBtn = driver.findElement(By.className("btn_login"));
 		loginBtn.click();
@@ -110,7 +107,7 @@ public class VodEnd {
 		WebElement help_icon = driver.findElement(By.className("u_cbox_btn_help"));
 		assertThat(help_icon.isDisplayed()).isEqualTo(true);
 	}
-	// 댓글 출력 
+	// 댓글 영역 출력 
 	public void commentBox() {
 		CommentBtn();
 		
@@ -119,13 +116,14 @@ public class VodEnd {
 		WebElement date = driver.findElement(By.className("u_cbox_date"));
 		WebElement report = driver.findElement(By.className("u_cbox_in_report"));
 		WebElement reply = driver.findElement(By.className("u_cbox_reply_txt"));
+		WebElement replyCnt = driver.findElement(By.className("u_cbox_reply_cnt"));
 		WebElement recomm = driver.findElement(By.className("u_cbox_ico_recomm"));
 		WebElement recommCnt = driver.findElement(By.className("u_cbox_cnt_recomm"));
 		WebElement unrecomm = driver.findElement(By.className("u_cbox_ico_unrecomm"));
 		WebElement unrecommCnt = driver.findElement(By.className("u_cbox_cnt_unrecomm"));
 		
 		System.out.print(nick.getText() + "\n" + text.getText() + "\n" + date.getText() + "\t" + report.getText() + "\n");
-		System.out.println(reply.getText() + "\t\t\t [" + recomm.getText() + recommCnt.getText() + "] [" + unrecomm.getText() + unrecommCnt.getText() + "]");
+		System.out.println(reply.getText() + replyCnt.getText() + "\t\t\t [" + recomm.getText() + recommCnt.getText() + "] [" + unrecomm.getText() + unrecommCnt.getText() + "]");
 		
 	}
 	// 비로그인 > 댓글
