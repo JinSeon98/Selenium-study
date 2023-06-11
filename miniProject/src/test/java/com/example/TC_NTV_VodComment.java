@@ -64,6 +64,36 @@ public class TC_NTV_VodComment {
 	  vod.commentBox();
   }
   
+  @Test (description = "페이징")
+  public void TC_01_06_페이징() {
+	  VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	  vod.paging();
+  }
+  
+  @Test (description = "새로고침 확인")
+  public void TC_02_새로고침() {
+	  VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	  vod.refresh();
+  }
+  
+  @Test (description = "통계영역 접힘 or 펼쳐짐")
+  public void TC_03_통계보기() {
+	 VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	 vod.chart();
+  }
+  
+  @Test (description = "Best댓글 선택 > [전체 댓글 더보기] 노출확인 및 선택 ")
+  public void TC_04_Best댓글() {
+	  VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	  vod.Best();
+  }
+  
+  @Test (description = "전체 댓글 선택 > 하단 페이징 ")
+  public void TC_05_전체댓글() {
+	  VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	  vod.All();
+  }
+  
   @Test (description = "[확인]선택 > 로그인페이지 노출")
   public void TC_08_01_비로그인_댓글() {
 	 VodEnd vod = PageFactory.initElements(driver, VodEnd.class);

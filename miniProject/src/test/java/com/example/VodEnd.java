@@ -7,6 +7,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
@@ -23,8 +24,10 @@ public class VodEnd {
 	//댓글 버튼 클릭 
 	public void CommentBtn() {
 		WebElement CommentBtn = driver.findElement(By.cssSelector("#clipInfoArea > div.watch_btn > a.btn_comment"));
-		
 		CommentBtn.click();
+		
+		WebElement btn_close = driver.findElement(By.className("btn_close"));
+		btn_close.click();
 	}
 	
 	//댓글 헤드 영역
@@ -112,7 +115,7 @@ public class VodEnd {
 		CommentBtn();
 		
 		WebElement nick = driver.findElement(By.className("u_cbox_nick"));
-		WebElement text = driver.findElement(By.className("u_cbox_contents"));
+		WebElement text = driver.findElement(By.className("u_cbox_text_wrap"));
 		WebElement date = driver.findElement(By.className("u_cbox_date"));
 		WebElement report = driver.findElement(By.className("u_cbox_in_report"));
 		WebElement reply = driver.findElement(By.className("u_cbox_reply_txt"));
@@ -126,6 +129,90 @@ public class VodEnd {
 		System.out.println(reply.getText() + replyCnt.getText() + "\t\t\t [" + recomm.getText() + recommCnt.getText() + "] [" + unrecomm.getText() + unrecommCnt.getText() + "]");
 		
 	}
+	//페이징 
+	public void paging() {
+		CommentBtn();
+		
+		WebElement page = driver.findElement(By.className("u_cbox_page_wrap"));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(page).perform();
+		
+		List<WebElement> page_num = page.findElements(By.tagName("a"));
+		
+		for(WebElement num : page_num) {
+			num.click();
+			actions.moveToElement(page).perform();
+			//stale element reference : stale element not found 에러 발생
+			
+			/* 해결방안 모색중...
+			 * 1) Thread.sleep(); -> 해결안됨 
+			 * 2) 리스트 초기화 -> 해결안됨 
+			 */
+
+		}
+	}
+	//새로고침
+	public void refresh() {
+		CommentBtn();
+		
+		WebElement refresh = driver.findElement(By.className("u_cbox_btn_refresh"));
+		refresh.click();
+	}
+	//통계보기 
+	public void chart() {
+		CommentBtn();
+		
+		WebElement chart = driver.findElement(By.className("u_cbox_chart_fold"));
+		WebElement chart_text = driver.findElement(By.className("u_cbox_chart_fold_cnt"));
+		WebElement chart_open = driver.findElement(By.className("u_cbox_chart_open"));
+		
+		assertThat(chart_text.getText()).isEqualTo("접기");
+		assertThat(chart_open.isDisplayed()).isEqualTo(true);
+		//[접기] 선택 
+		chart.click();
+		assertThat(chart_text.getText()).isEqualTo("통계보기");
+	}
+	//Best 댓글 
+	public void Best() {
+		CommentBtn();
+		
+		WebElement best_label = driver.findElement(By.xpath("//*[@id=\"cbox_module_wai_u_cbox_sort_option_tab1\"]/span[2]"));
+		best_label.click();
+		
+		WebElement best_ico = driver.findElement(By.className("u_cbox_ico_best"));
+		assertThat(best_ico.isDisplayed()).isEqualTo(true);
+		
+		WebElement all = driver.findElement(By.className("u_cbox_in_view_comment"));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(all).click().perform();
+
+	}
+	//전체 댓글
+	public void All() {
+		CommentBtn();
+		
+		//최신순 노출 확인
+		WebElement c_list = driver.findElement(By.className("u_cbox_list"));
+		List<WebElement> comment = c_list.findElements(By.className("u_cbox_comment"));
+		
+		for(WebElement info : comment) {
+			WebElement date = info.findElement(By.className("u_cbox_date"));
+			/* 
+			 * date_value로 확인? or 노출되는 값으로 확인? -> 현재는 노출되는 값 
+			 * String date_value = date.getAttribute("data-value").substring(0,19);
+			 */
+			
+			System.out.println(date.getText());
+		}
+		//하단 페이징
+		WebElement page = driver.findElement(By.className("u_cbox_page_wrap"));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(page).perform();
+		
+		WebElement next_page = driver.findElement(By.xpath("//*[@id=\"cbox_module\"]/div/div[8]/div/a[1]"));
+		next_page.click();
+	}
+	
 	// 비로그인 > 댓글
 	public void noLoginComment() {
 		CommentBtn();
