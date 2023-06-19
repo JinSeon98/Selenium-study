@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2988" started-at="2023-06-18T15:01:39Z" finished-at="2023-06-18T15:01:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2988" started-at="2023-06-18T15:01:39Z" finished-at="2023-06-18T15:01:42Z">
+      <class name="miniProject.membership_TC">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:miniProject.membership_TC@3012646b]" name="beforeClass" is-config="true" duration-ms="1255" started-at="2023-06-19T00:01:39Z" finished-at="2023-06-19T00:01:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_01_membership_Join()[pri:0, instance:miniProject.membership_TC@3012646b]" name="TC_01_membership_Join" duration-ms="1144" started-at="2023-06-19T00:01:40Z" finished-at="2023-06-19T00:01:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_membership_Join -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:miniProject.membership_TC@3012646b]" name="afterClass" is-config="true" duration-ms="581" started-at="2023-06-19T00:01:42Z" finished-at="2023-06-19T00:01:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- miniProject.membership_TC -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
