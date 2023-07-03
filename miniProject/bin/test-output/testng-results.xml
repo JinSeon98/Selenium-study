@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="62177" started-at="2023-07-02T09:25:14Z" finished-at="2023-07-02T09:26:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="62177" started-at="2023-07-02T09:25:14Z" finished-at="2023-07-02T09:26:16Z">
+      <class name="com.nts.study.miniProject.test.membership_TC">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="beforeClass" is-config="true" duration-ms="6" started-at="2023-07-02T18:25:14Z" finished-at="2023-07-02T18:25:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="beforeMethod" is-config="true" duration-ms="1211" started-at="2023-07-02T18:25:14Z" finished-at="2023-07-02T18:25:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_01_membership_family_Month_Join()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="TC_01_membership_family_Month_Join" duration-ms="3503" started-at="2023-07-02T18:25:15Z" description="패밀리 멤버십 월간 가입" finished-at="2023-07-02T18:25:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_membership_family_Month_Join -->
+        <test-method status="PASS" signature="afterMathod()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="afterMathod" is-config="true" duration-ms="611" started-at="2023-07-02T18:25:19Z" finished-at="2023-07-02T18:25:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMathod -->
+        <test-method status="PASS" signature="initMembership()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="initMembership" is-config="true" duration-ms="1" started-at="2023-07-02T18:25:19Z" finished-at="2023-07-02T18:25:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMembership -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="beforeMethod" is-config="true" duration-ms="1051" started-at="2023-07-02T18:25:19Z" finished-at="2023-07-02T18:25:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_02_membership_family_Year_Join()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="TC_02_membership_family_Year_Join" duration-ms="16267" started-at="2023-07-02T18:25:20Z" description="패밀리 멤버십 연간 가입" finished-at="2023-07-02T18:25:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_membership_family_Year_Join -->
+        <test-method status="PASS" signature="afterMathod()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="afterMathod" is-config="true" duration-ms="617" started-at="2023-07-02T18:25:36Z" finished-at="2023-07-02T18:25:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMathod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="beforeMethod" is-config="true" duration-ms="1058" started-at="2023-07-02T18:25:37Z" finished-at="2023-07-02T18:25:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="initMembership()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="initMembership" is-config="true" duration-ms="0" started-at="2023-07-02T18:25:37Z" finished-at="2023-07-02T18:25:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMembership -->
+        <test-method status="PASS" signature="TC_03_membership_student_Month_Join()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="TC_03_membership_student_Month_Join" duration-ms="23344" started-at="2023-07-02T18:25:38Z" description="스튜던트 멤버십 연간 가입" finished-at="2023-07-02T18:26:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_membership_student_Month_Join -->
+        <test-method status="PASS" signature="afterMathod()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="afterMathod" is-config="true" duration-ms="633" started-at="2023-07-02T18:26:02Z" finished-at="2023-07-02T18:26:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMathod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="beforeMethod" is-config="true" duration-ms="1052" started-at="2023-07-02T18:26:02Z" finished-at="2023-07-02T18:26:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="initMembership()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="initMembership" is-config="true" duration-ms="0" started-at="2023-07-02T18:26:02Z" finished-at="2023-07-02T18:26:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMembership -->
+        <test-method status="FAIL" signature="TC_04_membership_student_Year_Join()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="TC_04_membership_student_Year_Join" duration-ms="12197" started-at="2023-07-02T18:26:03Z" description="스튜던트 멤버십 연간 가입" finished-at="2023-07-02T18:26:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div[2]/div/div/div/div[4]/div[2]/ul/li[3]/div[1]/div/label"}  (Session info: chrome=114.0.5735.134)For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'System info: host: 'AD02275547', ip: '10.12.45.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}Session ID: b820edcad8e4e565cfe4452994589dfb*** Element info: {Using=xpath, value=//*[@id="root"]/div[2]/div/div/div/div[4]/div[2]/ul/li[3]/div[1]/div/label}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div[2]/div/div/div/div[4]/div[2]/ul/li[3]/div[1]/div/label"}  (Session info: chrome=114.0.5735.134)For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'System info: host: 'AD02275547', ip: '10.12.45.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}Session ID: b820edcad8e4e565cfe4452994589dfb*** Element info: {Using=xpath, value=//*[@id="root"]/div[2]/div/div/div/div[4]/div[2]/ul/li[3]/div[1]/div/label}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)at org.openqa.selenium.By$ByXPath.findElement(By.java:353)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)at com.nts.study.miniProject.MembershipStudentJoinPage.pay(MembershipStudentJoinPage.java:147)at com.nts.study.miniProject.MembershipStudentJoinPage.normalYearMembershipJoin(MembershipStudentJoinPage.java:132)at com.nts.study.miniProject.MembershipStudentJoinPage.membershipJoin(MembershipStudentJoinPage.java:64)at com.nts.study.miniProject.test.membership_TC.TC_04_membership_student_Year_Join(membership_TC.java:86)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_membership_student_Year_Join -->
+        <test-method status="PASS" signature="afterMathod()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="afterMathod" is-config="true" duration-ms="610" started-at="2023-07-02T18:26:15Z" finished-at="2023-07-02T18:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMathod -->
+        <test-method status="PASS" signature="initMembership()[pri:0, instance:com.nts.study.miniProject.test.membership_TC@33065d67]" name="initMembership" is-config="true" duration-ms="0" started-at="2023-07-02T18:26:16Z" finished-at="2023-07-02T18:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMembership -->
+      </class> <!-- com.nts.study.miniProject.test.membership_TC -->
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2988" started-at="2023-06-18T15:01:39Z" finished-at="2023-06-18T15:01:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2988" started-at="2023-06-18T15:01:39Z" finished-at="2023-06-18T15:01:42Z">
+      <class name="miniProject.membership_TC">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:miniProject.membership_TC@3012646b]" name="beforeClass" is-config="true" duration-ms="1255" started-at="2023-06-19T00:01:39Z" finished-at="2023-06-19T00:01:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_01_membership_Join()[pri:0, instance:miniProject.membership_TC@3012646b]" name="TC_01_membership_Join" duration-ms="1144" started-at="2023-06-19T00:01:40Z" finished-at="2023-06-19T00:01:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_membership_Join -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:miniProject.membership_TC@3012646b]" name="afterClass" is-config="true" duration-ms="581" started-at="2023-06-19T00:01:42Z" finished-at="2023-06-19T00:01:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- miniProject.membership_TC -->
+>>>>>>> branch 'subin_park' of https://github.com/JinSeon98/Selenium-study.git
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

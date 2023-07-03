@@ -1,9 +1,8 @@
 package com.nts.study.miniProject;
 
 public enum User {
-	ONCLICK_FAMILY,
-	ONCLICK_STUDENT,
-	NORMAL_FAMILY,
-	NORMAL_STUDENT; 
-	
+	REJOIN_MONTH,
+	REJOIN_YEAR,
+	NORMAL_MONTH,
+	NORMAL_YEAR; 
 }

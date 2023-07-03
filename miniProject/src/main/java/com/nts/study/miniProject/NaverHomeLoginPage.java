@@ -31,13 +31,24 @@ public class NaverHomeLoginPage {
 	 * @param userPw
 	 * @return
 	 */
-	public MembershipJoinPage  login(String userId, String userPw) {
+	public IMembership login(String userId, String userPw ,Membership membershiptype) {
 		id.sendKeys(userId);
 		pw.sendKeys(userPw);
 		submit.click();
 		
-		 return PageFactory.initElements(driver,
-				 MembershipJoinPage.class);
+		if(membershiptype == Membership.FAMILY) {
+			 return PageFactory.initElements(driver,
+					 MembershipFamilyJoinPage.class);
+		}
+		else if(membershiptype == Membership.STUDEMT) {
+			 return PageFactory.initElements(driver,
+					 MembershipStudentJoinPage.class);
+		}
+		
+		//TODO 예외 처리해야함
+		return PageFactory.initElements(driver,
+				 MembershipFamilyJoinPage.class);
+		
 	}
 	
 }

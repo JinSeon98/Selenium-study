@@ -10,6 +10,10 @@ import org.openqa.selenium.support.PageFactory;
 public class iimsMemPage {
 
     WebDriver driver;
+	/** IIMS 관리툴 ID*/
+	String iimsID = "NT11940";
+	/** IIMS 관리툴 PW*/
+	String iimsPW = "asd!";
 
 
     @FindBy(id = "user-id")
@@ -27,9 +31,9 @@ public class iimsMemPage {
         driver.get("http://alpha-iims.navercorp.com/view/svc/main?svcId=MEM&roleId=00002&menuId=MEM_000004");
     }
 
-    public void login(String username, String pwd) {
-    	id.sendKeys(username);
-        password.sendKeys(pwd);
+    public void login() {
+    	id.sendKeys(iimsID);
+        password.sendKeys(iimsPW);
         submit.click();
     }
     
@@ -63,10 +67,9 @@ public class iimsMemPage {
     	WebElement deleteUserInfo = driver.findElement(By.cssSelector("#deleteNdi"));
     	deleteUserInfo.click();
     	/*1초 딜레이 필요?*/
-    	driver.switchTo(). alert(). accept();
+    	driver.switchTo().alert().accept();
 
     	/*1초 딜레이 필요? 얼럿 성공인지 확인 판단 추가 필요*/
-		driver.switchTo(). alert(). accept();
 	}
 
 	/**
@@ -77,10 +80,10 @@ public class iimsMemPage {
     	WebElement deleteUserInfo = driver.findElement(By.cssSelector("#deleteUser"));
     	deleteUserInfo.click();
     	/*1초 딜레이 필요?*/
-    	driver.switchTo(). alert(). accept();
+    	driver.switchTo().alert().accept();
 
     	/*1초 딜레이 필요? 얼럿 성공인지 확인 판단 추가 필요*/
-		driver.switchTo(). alert(). accept();
+		driver.switchTo().alert().accept();
 	}
 
 	/**
@@ -99,10 +102,10 @@ public class iimsMemPage {
 		
 		/** 강제 전액 환불*/
 		driver.findElement(By.id("requestFullRefund")).click();
-		driver.switchTo(). alert(). accept();
+		driver.switchTo().alert().accept();
 		
 		/*1초 딜레이 필요? 얼럿 성공인지 확인 판단 추가 필요*/
-		driver.switchTo(). alert(). accept();
+		driver.switchTo().alert().accept();
 		
 		/** 멤버십 사용자ID 삭제*/
 		driver.findElement(By.cssSelector("#deleteNdi")).click();;

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+<<<<<<< HEAD
+      <class name="com.nts.study.miniProject.test.membership_TC">
+        <methods>
+          <include name="TC_04_membership_student_Year_Join"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMathod"/>
+          <include name="initMembership"/>
+        </methods>
+      </class> <!-- com.nts.study.miniProject.test.membership_TC -->
+=======
+      <class name="miniProject.membership_TC">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="TC_01_membership_Join"/>
+        </methods>
+      </class> <!-- miniProject.membership_TC -->
+>>>>>>> branch 'subin_park' of https://github.com/JinSeon98/Selenium-study.git
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
