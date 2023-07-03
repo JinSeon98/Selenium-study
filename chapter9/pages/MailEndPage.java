@@ -14,6 +14,9 @@ public class MailEndPage {
 	@FindBy(xpath = "//*[@id=\"content\"]/div[2]/div[1]/div[2]/div[3]/button")
 	WebElement unReadBtn;
 	
+	@FindBy(xpath = "//*[@id=\"mail_read_scroll_view\"]/div/div[1]/h4/span[1]/label")
+	WebElement bookmark;
+	
 	public MailEndPage(WebDriver driver) {
 		this.driver = driver;
 		driver.get(driver.getCurrentUrl());
@@ -29,5 +32,13 @@ public class MailEndPage {
 		unReadBtn.click();
 		
 		return unReadBtn.getText();
+	}
+	
+	public void bookmarkMail() {
+		bookmark.click();
+	}
+	
+	public String getBookmarkTxt() {
+		return bookmark.getText();
 	}
 }

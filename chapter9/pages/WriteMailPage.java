@@ -25,7 +25,7 @@ public class WriteMailPage {
 		driver.get("https://mail.naver.com/v2/new");
 	}
 
-	public SendMailSuccessPage writeMail(String srecipient, String stitle, String scontent) {
+	public DoneMailPage writeMail(String srecipient, String stitle, String scontent) {
 		recipient.sendKeys(srecipient);
 		title.sendKeys(stitle);
 		
@@ -36,6 +36,6 @@ public class WriteMailPage {
 		driver.switchTo().defaultContent();
 		sendBtn.click();
 		
-		return PageFactory.initElements(driver, SendMailSuccessPage.class);
+		return PageFactory.initElements(driver, DoneMailPage.class);
 	}
 }
