@@ -34,33 +34,22 @@ public class TC_NTV_VodComment {
       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
   }
   
-  @Test(description = "댓글, 댓글수, 새로고침 확인")
-  public void TC_01_댓글_타이틀_영역() {
-	VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
-	vod.Comment_Head();
-  }
-  
-  @Test(description = "누가 댓글을 썼을까요? | 성별, 연령대별 통계 | 접기^ 확인")
-  public void TC_01_02_댓글_차트() {
+  @Test(description = "댓글 영역 ")
+  public void TC_01_댓글영역() {
 	  VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	  //1. 댓글, 댓글수, 새로고침 확인
+	  vod.Comment_Head();
+	  
+	  //2. 누가 댓글을 썼을까요? | 성별, 연령대별 통계 | 접기^ 확인
 	  vod.CommentChart();
-  }
-  
-  @Test	(description = "댓글 입력창 ('주제와 무관한 댓글, 악플은 삭제될 수 있습니다.')")
-  public void TC_01_03_플레이스홀더() {
-	  VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	  
+	  //3. 댓글 입력창 ('주제와 무관한 댓글, 악플은 삭제될 수 있습니다.')
 	  vod.CommentInput();
-  }
-  
-  @Test (description = "[BEST댓글] | V 전체댓글 | 도움말")
-  public void TC_01_04_정렬() {
-	 VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
-	 vod.Sort_option();
-  }
-  
-  @Test (description = "닉네임 | (BEST) 댓글내용 | 등록시간 | [신고] | [답글 n] | [공감 n] | [비공감 n] ")
-  public void TC_01_05_댓글내용() {
-	  VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	  
+	  //4. [BEST댓글] | V 전체댓글 | 도움말
+	  vod.Sort_option();
+	  
+	  //5. 닉네임 | (BEST) 댓글내용 | 등록시간 | [신고] | [답글 n] | [공감 n] | [비공감 n]
 	  vod.commentBox();
   }
   
@@ -94,6 +83,18 @@ public class TC_NTV_VodComment {
 	  vod.All();
   }
   
+  @Test (description = "우측 도움말 선택 > 안내레이어 문구 확인 ")
+  public void TC_06_도움말() {
+	  VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	  vod.help();
+  }
+  
+  @Test (description = "답글 펼치기 > 리스트 노출, 답글접기 확인 ")
+  public void TC_07_답글펼치기() {
+	  VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	  vod.Reply();
+  }
+  
   @Test (description = "[확인]선택 > 로그인페이지 노출")
   public void TC_08_01_비로그인_댓글() {
 	 VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
@@ -105,5 +106,28 @@ public class TC_NTV_VodComment {
 	VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
 	vod.noLoginReply();
  }
-  
+ 
+ @Test (description = "댓글 400자 입력")
+ public void TC_09_01_댓글입력() {
+	VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	vod.CommentWrite();
+ }
+
+ @Test (description = "신고")
+ public void TC_10_신고하기() {
+	VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	vod.Report();
+ }
+ 
+ @Test (description = "[확인]선택 > 로그인페이지 노출")
+ public void TC_11_비로그인_예외상황() {
+	 VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	 vod.noLoginException();
+ }
+ 
+ @Test (description = "공감 선택된 상태 > 비공감 선택")
+ public void TC_12_공감() {
+	 VodEnd vod = PageFactory.initElements(driver, VodEnd.class);
+	 vod.recomm();
+ }
 }
